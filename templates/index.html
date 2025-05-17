@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocChat AI | Smart Document Assistant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>DocChat AI</h1>
+            </div>
+            <p>Upload documents and chat with an AI that understands their content</p>
+        </header>
+
+        <div class="app-wrapper">
+            <div class="sidebar">
+                <div class="upload-section">
+                    <h2><i class="fas fa-file-upload"></i> Upload Documents</h2>
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput" multiple accept=".pdf,.docx,.txt,.csv,.xlsx">
+                            <label for="fileInput">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Choose files</span>
+                            </label>
+                            <div id="fileList"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </form>
+                    <div id="uploadStatus"></div>
+                </div>
+
+                <div class="process-section">
+                    <h2><i class="fas fa-cogs"></i> Process Documents</h2>
+                    <button id="processBtn" class="btn btn-secondary">
+                        <i class="fas fa-brain"></i> Process
+                    </button>
+                    <div id="processStatus"></div>
+                </div>
+            </div>
+
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> Chat with Your Documents</h2>
+                    <button id="clearChat" class="btn btn-text">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+                <div class="chat-container">
+                    <div id="chatMessages" class="chat-messages">
+                        <div class="message bot-message welcome-message">
+                            <i class="fas fa-robot bot-icon"></i>
+                            <div class="message-content">
+                                <p>Hello! I'm your document assistant. Upload and process your documents, then ask me anything about them.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <div class="chat-input">
+                            <textarea id="userInput" placeholder="Ask something about your documents..." rows="1"></textarea>
+                            <button id="sendBtn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
