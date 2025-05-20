@@ -32,8 +32,7 @@ DocChat AI is a FastAPI-based intelligent document assistant that allows users t
 
 1. **Clone the repo:**
     ```bash
-    git clone https://github.com/yourusername/docchat-ai.git
-    cd docchat-ai
+    https://github.com/GoldSharon/DocChat-AI
     ```
 
 2. **Create and activate virtual environment (optional but recommended):**
