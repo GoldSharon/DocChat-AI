@@ -4,9 +4,16 @@
 DocChat AI is a FastAPI-based intelligent document assistant that allows users to upload documents (TXT, PDF, DOCX), process them into searchable chunks, generate embeddings, and interact with the content via a chatbot powered by LLaMA 2. It uses semantic search to find relevant document sections and answer user queries intelligently.
 ___
 
+---
+
+# 🔗 Live Demo
 **⚠️ Note:** **Version 2 is available!**  
 - GitHub: [DocChatAI_V2](https://github.com/GoldSharon/DocChatAI_V2/tree/main)  
-- Live Demo: [DocChat AI V2](https://docchatai-v2.onrender.com)  
+- Live Demo: [DocChat AI V2](https://huggingface.co/spaces/GoldSharon/docchat-ai)  
+---
+> ⚠️ Hosted on Hugging Face Spaces (free CPU tier).
+> The app may take **20–60 seconds to start** if the Space is sleeping.
+
 ---
 
 ## Features
